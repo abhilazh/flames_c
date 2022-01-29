@@ -1,3 +1,4 @@
+
 /******************************************************************************
 
                             Online C Compiler.
@@ -12,7 +13,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 int main()
 {
    char name1[100], name2[100],flames[]={'F','L','A','M','E','S'};
-   int comparison_result,word_count=0,word_count2=0,len1,len2,total_count,i=0;
+   int comparison_result,word_count=0,word_count2=0,len1,len2,total_count,i=0,word_count_flames=0;
    printf("F L A M E S stands for - Friends, Lover, Affection, Marriage, Enemy, Sister\n");
    printf("name1:");//enter name 
    scanf("%s",name1);// reading the name
@@ -63,18 +64,7 @@ int main()
    }
    total_count=word_count+word_count2;
    printf("\ntotal count=%d",total_count);
-   while(word_count_flames<2)
-   {
-       
-   
-    for(int i=0;flames[i]!='\0';i++)
-    {
-        for (int j=0;j<total_count;j++)
-        {
-            flames[i]
-        }
-        
-    }
+  
    
 }
 
