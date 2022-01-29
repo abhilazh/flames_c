@@ -1,0 +1,80 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+   char name1[100], name2[100],flames[]={'F','L','A','M','E','S'};
+   int comparison_result,word_count=0,word_count2=0,len1,len2,total_count,i=0;
+   printf("F L A M E S stands for - Friends, Lover, Affection, Marriage, Enemy, Sister\n");
+   printf("name1:");//enter name 
+   scanf("%s",name1);// reading the name
+    //printf("\nname:%s",name1);//printing name
+    printf("\nname2:");//enter name 
+   scanf("%s",name2);// reading the name
+   comparison_result=strcmp(name1,name2);// compare names with function
+   if(comparison_result==0)
+   {
+       printf("entered string is same!");
+   }
+   else
+   {
+      for(int i=0;name1[i]!='\0';i++)
+      {
+          for(int j=0;name2[j]!='\0';j++)
+          {
+          
+            if(name1[i]==name2[j])
+             {
+              name1[i]=' ';
+              name2[j]=' ';
+             }
+          }
+      }
+      printf("%s\n",name1);
+      printf("%s",name2);
+      len1=strlen(name1);
+      len2=strlen(name2);
+      printf("\nlenght1=%d\n",len1);
+      printf("\nlength2=%d\n",len2);
+   }
+   for(int i=0;name1[i]!='\0';i++)
+   {
+       if(name1[i]!=' ')
+       {
+          word_count++;
+       }
+      
+   }
+   for(int i=0;name2[i]!='\0';i++)
+   {
+       if(name2[i]!=' ')
+       {
+          word_count2++;
+       }
+      
+   }
+   total_count=word_count+word_count2;
+   printf("\ntotal count=%d",total_count);
+   while(word_count_flames<2)
+   {
+       
+   
+    for(int i=0;flames[i]!='\0';i++)
+    {
+        for (int j=0;j<total_count;j++)
+        {
+            flames[i]
+        }
+        
+    }
+   
+}
+
